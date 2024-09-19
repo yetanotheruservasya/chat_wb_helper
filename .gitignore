@@ -1,0 +1,16 @@
+# Игнорировать системные файлы VS Code
+.vscode/
+.env
+__pycache__/
+
+#Игнорировать рабочие файлы
+audio_chunks/
+cleaned_audio/
+corrected_transcriptions/
+issues_and_recommendations/
+transcripted_chunks/
+video_input/
+utils/
+
+#Не выкладываем базу эмбедингов
+embeddings.db
