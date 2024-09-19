@@ -28,4 +28,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          ddocker push yetanotheruservasya/main:tagname
+          docker push yetanotheruservasya/main:tagname
