@@ -26,4 +26,4 @@ jobs:
         run: docker build . -t yourusername/chat_wb_helper:tagname
 
       - name: Push Docker image
-        run: docker push yourusername/chat_wb_helper:tagname
+        run: docker push yetanotheruservasya/main:tagname
