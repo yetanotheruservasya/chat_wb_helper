@@ -2,6 +2,7 @@
 .vscode/
 .env
 __pycache__/
+venv/
 
 #Игнорировать рабочие файлы
 audio_chunks/

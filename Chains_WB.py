@@ -13,12 +13,13 @@ from langchain.chains.history_aware_retriever import create_history_aware_retrie
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-import Lib_WB
 from langchain_community.chat_message_histories import ChatMessageHistory
 
 # Загрузка ключа API из файла .env
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
+PATH_TO_EMBEDINGS_DB = os.getenv('PATH_TO_EMBEDINGS_DB')
+print(PATH_TO_EMBEDINGS_DB)
 llm = ChatOpenAI(api_key=openai_api_key, temperature=0.7, model="gpt-4o-mini")
 
 # 1. Функция для извлечения данных из SQLite
@@ -45,7 +46,6 @@ def fetch_embeddings_from_db(db_path):
     return sentences, np.array(embeddings)
 
 # 2. Получаем эмбеддинги и предложения из SQLite
-PATH_TO_EMBEDINGS_DB = os.getenv('PATH_TO_EMBEDINGS_DB')
 sentences, embeddings = fetch_embeddings_from_db(PATH_TO_EMBEDINGS_DB)
 
 # 3. Создаем объект Embeddings
