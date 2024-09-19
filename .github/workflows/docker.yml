@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build . -t yourusername/chat_wb_helper:tagname
+        run: docker build . -t yetanotheruservasya/main:tagname
 
       - name: Push Docker image
         run: docker push yetanotheruservasya/main:tagname
