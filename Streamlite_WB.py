@@ -51,7 +51,7 @@ with st.sidebar:
     """)
     st.markdown(
         f"""
-        <a href="{donation_link}" target="_blank" style="text-decoration: none;">
+        <a href={donation_link} target="_blank" style="text-decoration: none;">
             <div style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; border-radius: 5px; display: inline-block;">
                 Поддержать проект
             </div>
@@ -67,7 +67,7 @@ with st.sidebar:
     """)
     st.markdown(
         f"""
-        <a href="{calendly_link}" target="_blank" style="text-decoration: none;">
+        <a href={calendly_link} target="_blank" style="text-decoration: none;">
             <div style="background-color: #1E90FF; color: white; padding: 10px 20px; text-align: center; border-radius: 5px; display: inline-block;">
                 Записаться на встречу
             </div>
