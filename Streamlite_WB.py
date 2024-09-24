@@ -32,7 +32,7 @@ with st.sidebar:
     st.header("Станьте крутым продавцом!")
     st.write(f"""
     - 📧 Email: [Обратная связь]({trainer_email})
-    - 📞 Telegramm [Написать тренеру]({trainer_telegram})
+    - 📞 Telegram [Написать тренеру]({trainer_telegram})
     - 📢 Однокурсники [Канал курса]({course_channel})
     """)
 

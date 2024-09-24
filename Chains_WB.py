@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import os
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.chains.retrieval import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains.history_aware_retriever import create_history_aware_retriever
